@@ -112,14 +112,14 @@ contracts:
 
 networks:
   - id: 31337 # Local Anvil
-    start_block: 0
+    start_block: 1
     rpc_config:
       url: https://foundry-production-f209.up.railway.app
     contracts:
       - name: FloorFactory
-        address: '0xcec1f19cdb30145fdec0fa22fd62baa92bcd2b0c'
+        address: '0x6863165605198cdcdf4bb985c1cee5f3c93401ba'
       - name: ModuleFactory
-        address: '0xd29ad337498cb049703504d00ab14e54cc9abf0b'
+        address: '0x034b63c29e95a661142125a00902a72518182993'
       - name: FloorMarket
         address:
       - name: CreditFacility

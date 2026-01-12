@@ -12,7 +12,6 @@ const RPC_URLS: Record<number, string> = {
 }
 
 // Custom chain config for local Anvil (Avalanche fork)
-// Spreads Avalanche config to inherit Multicall3 address
 const localAnvil = defineChain({
   ...avalanche,
   id: 31337,
@@ -20,6 +19,11 @@ const localAnvil = defineChain({
   network: 'anvil',
   rpcUrls: {
     default: { http: [RPC_URLS[31337]] },
+  },
+  contracts: {
+    multicall3: {
+      address: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+    },
   },
 })
 
