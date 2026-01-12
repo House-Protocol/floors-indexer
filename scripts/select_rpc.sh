@@ -8,7 +8,7 @@ PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 CONFIG_FILE="${CONFIG_FILE:-${PROJECT_ROOT}/config.yaml}"
 LOCAL_RPC_URL="${LOCAL_RPC_URL:-http://127.0.0.1:8545}"
-REMOTE_RPC_URL="${REMOTE_RPC_URL:-https://vfgvanuabr.eu-central-1.awsapprunner.com/}"
+REMOTE_RPC_URL="${REMOTE_RPC_URL:-https://foundry-production-f209.up.railway.app}"
 CHOICE_INPUT="${RPC_SOURCE:-}"
 FLOOR_FACTORY_INPUT="${FLOOR_FACTORY:-}"
 

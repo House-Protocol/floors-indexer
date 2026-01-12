@@ -114,14 +114,12 @@ networks:
   - id: 31337 # Local Anvil
     start_block: 0
     rpc_config:
-      # Allow overriding the RPC endpoint (e.g. local Anvil) via RPC_URL_31337
-      url: '${RPC_URL_31337:-https://vfgvanuabr.eu-central-1.awsapprunner.com/}'
+      url: https://foundry-production-f209.up.railway.app
     contracts:
       - name: FloorFactory
-        address: '${FLOOR_FACTORY:-0xec8c677e1db317e328a1919298afcb36d36a0b08}'
+        address: '0xcec1f19cdb30145fdec0fa22fd62baa92bcd2b0c'
       - name: ModuleFactory
-
-        address:
+        address: '0xd29ad337498cb049703504d00ab14e54cc9abf0b'
       - name: FloorMarket
         address:
       - name: CreditFacility

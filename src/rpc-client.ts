@@ -5,7 +5,7 @@ import { createPublicClient, defineChain, http, type PublicClient } from 'viem'
 import { avalanche } from 'viem/chains'
 
 // RPC URL mapping from config.yaml
-const DEFAULT_RPC_URL_31337 = 'https://vfgvanuabr.eu-central-1.awsapprunner.com/'
+const DEFAULT_RPC_URL_31337 = 'https://foundry-production-f209.up.railway.app'
 
 const RPC_URLS: Record<number, string> = {
   31337: process.env.RPC_URL_31337?.trim() || DEFAULT_RPC_URL_31337,
